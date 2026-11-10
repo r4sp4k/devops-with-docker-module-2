@@ -1,0 +1,6 @@
+services:
+  yt-dlp-ubuntu:
+    image: devopsdockeruh/simple-web-service
+    volumes:
+      - ./log.txt:/usr/src/app/text.log
+    container_name: compose_web
