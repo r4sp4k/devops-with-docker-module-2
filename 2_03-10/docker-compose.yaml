@@ -24,4 +24,6 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_PASSWORD: example
-    container_name: db_backend  
+    container_name: db_backend
+    volumes:
+      - ./database:/var/lib/postgresql  
