@@ -1,17 +1,17 @@
 services:
   frontend:
-    image: raspak/frontend
+    image: raspak/frontend:v2.10
     #expose:
     #  - "5001"
-    ports:
-      - 5001:5001    
+    #ports:
+    #  - 5001:5001    
     container_name: frontend    
   backend:
     image: raspak/backend
     #expose:
     #  - "8080"
-    ports:
-      - 8080:8080   
+    #ports:
+    #  - 8080:8080   
     environment:
       - REDIS_HOST=redis
       - POSTGRES_HOST=db
